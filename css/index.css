@@ -364,7 +364,11 @@ main img{
 	top:0;
 	left:100%;
 	z-index:0;
-	transition:all 1s;
+}
+
+#third-slide{
+	top:0;
+	left:200%;
 }
 
 #accounts-login{
@@ -531,14 +535,16 @@ main img{
 	position:absolute;
 	top:0;
 	left:0;
-	animation: 10s linear infinite forwards slidein;
+	animation: 15s linear infinite forwards slidein;
 }
 
 @keyframes slidein{
 	0% { left: 0;}
-	42% {left : 0;}
-	58% {left: -100%;}
-	100% {left:-100%;}
+	24% {left : 0;}
+	36% {left: -100%;}
+	60% {left:-100%;}
+	72% {left:-200%;}
+	100% {left:-200%;}
 }
 
 .fa-angle-left,
@@ -629,8 +635,18 @@ Goals Section
 	padding: .5em 1.5em;
 }
 
+
 .goal-slider{
 	width:24%;
+}
+
+.goal-slider i{
+
+	display:block;
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 0 0 10px black;
+	color:white;
 }
 
 .goal-slider .slide-container{
@@ -672,6 +688,8 @@ Goals Section
 .slide-container .slide:first-child h4{
 	font-weight: 900;
 }
+
+
 
 
 
